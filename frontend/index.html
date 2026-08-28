@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini App - CI/CD Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">⚡ Mini App</div>
+    <span class="badge" id="healthBadge">Checking...</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>CI/CD Learning Project</h1>
+      <p>A simple frontend + backend app to practice GitHub Actions CI/CD pipelines.</p>
+    </section>
+
+    <!-- Add User Form -->
+    <section class="card">
+      <h2>➕ Add User</h2>
+      <form id="addUserForm">
+        <input type="text" id="nameInput" placeholder="Name" required />
+        <input type="text" id="roleInput" placeholder="Role" required />
+        <button type="submit">Add User</button>
+      </form>
+      <p class="form-msg" id="formMsg"></p>
+    </section>
+
+    <!-- Users List -->
+    <section class="card">
+      <h2>👥 Users</h2>
+      <button id="fetchUsersBtn">Load Users</button>
+      <ul id="userList" class="user-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built for learning CI/CD 🚀 | Backend: <code>localhost:5000</code></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
